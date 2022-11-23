@@ -1,22 +1,25 @@
-<link rel="stylesheet" href="stylesheet/style.css">
+<link rel="stylesheet" href="view/stylesheet/style.css">
 
-<body class="log-in">
+<body class="sign_in">
     <nav>
-            <a href="Index.html" class="active">Home</a>
-            <a href="Categorys.php" class="active">Categorys</a>
-            <a href="products.php" class="active">Products</a>
-            <a href="login.php" class="active">Login</a>
+        <a href="index.html">Home</a>
+        <a href="products.php">Product</a>
+        <a href="categorys.php">Category</a>
+        <a class="active" href="login.php">Login</a>
     </nav>
-    <div class="Login">
-        <h1 class="log-in">Login</h1>
-        <form action="log_in" methode="get" action="login.php"></form>
-        <label><b>Username: </b></label>
-        <input type="username" type="text" id="username">
-        <P></P>
-        <label><b>Password: </b></label>
-        <input type="password" type="text" id="password">
-        <p></p>
-        <button class="log-in" id="log-in">Login</button>
+    <div class="login">
+        <h1 class="sign-in">Sign-in</h1>
+        <form id="login">
+            <label><b>Username</b></label>
+            <input class="username" type="text" id="username" placeholder="Username">
+            <br>
+            <br>
+            <label><b>Password</b></label>
+            <input class="password" type="password" id="password" placeholder="Password">
+            <br>
+            <br>
+            <button class="sign-in" id="sign-in">sign in</button>
+        </form>
     </div>
+    <script src="controller/authentication.js"></script>
 </body>
-</html>

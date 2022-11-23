@@ -1,31 +1,26 @@
-<link rel="stylesheet" href="stylesheet/style.css">
-<body class="products">
-    <nav>
-            <a href="Index.html" class="active">Home</a>
-            <a href="Categorys.php" class="active">Categorys</a>
-            <a href="products.php" class="active">Products</a>
-            <a href="login.php" class="active">Login</a>
-    </nav>
-    <div class="products">
-    <h1 class="products">Products</h1>
-    <table class="products">
-        <td>
-            <th>Sku</th>
-            <th>Active</th>
-            <th>Category_id</th>
-            <th>Name</th>
-            <th>Image</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Stock</th>
-            <th></th>
-        </td>
+<link rel="stylesheet" href="view/stylesheet/style.css">
+<nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="products.php">Product</a>
+    <a href="categorys.php">Category</a>
+    <a class="sign-in" href="login.php">Login</a>
+</nav>
 
-    </table>
+<h1>Products</h1>
 
-
-    <button class="delete-category" id="delete-category">Delete</button>
-    <button class="edit-category" id="edit-category">Edit</button>
-    <button class="create-category" id="create-category">Create new Product</button>
-
-    </div>
+<table class="products-categorys-table" id="products-table">
+    <tr class="products-row">
+        <th class="products-categorys-header">Sku</th>
+        <th class="products-categorys-header">Active</th>
+        <th class="products-categorys-header">Category_id</th>
+        <th class="products-categorys-header">Name</th>
+        <th class="products-categorys-header">Image</th>
+        <th class="products-categorys-header">Description</th>
+        <th class="products-categorys-header">Price</th>
+        <th class="products-categorys-header">Stock</th>
+    </tr>
+</table>
+<br>
+<br>
+<a href="new_product.php"><button class="create-new" id="new-product">Create a new Product</button></a>
+<script src="controller/products.js"></script>
