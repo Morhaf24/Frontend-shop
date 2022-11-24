@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="view/stylesheet/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title></title>
+    <link rel="stylesheet" href="stylesheet/style.css">
 </head>
-<body class="all">
-    <nav>
-        <a class="active" href="index.html">Home</a>
-        <a href="products.php">Product</a>
-        <a href="categorys.php">Category</a>
-        <a href="login.php">Login</a>
-    </nav>
-    <h1>Home</h1>
-    <h2>Über mich</h2>
-    <p>Ich bin Mouayad Alnhlawe und das ist das Projekt von Modul ÜK294. Das ist das Frontend meines Online-Shop-Backend, den ich in Modul ÜK295 gemacht habe.</p>
-    <p>Auf dieser Website kann man neue Produkte und Kategorien sehen, erstellen, bearbeiten oder löschen.</p>
+<body>
+    <div class="Home">
+        <nav>
+            <a href="Index.html" class="active">Home</a>
+            <a href="php/categorys.php" class="active">Categorys</a>
+            <a href="php/products.php" class="active">Products</a>
+            <a href="php/login.php" class="active">Login</a>
+            <div>
+            </div>
+        </nav>
+        <h1>Willkommen</h1>
+        <p class="home"><b>
+            ÜK294 Frontend einer interaktiven Webapplikation realisieren 
+        </b>
+        </p>
+        <p class="home">
+            Im üK295 habe ich eine API zur Produktverwaltung eines Online-Shops umgesetzt. Damit
+            können mittels HTTP-Anfragen Produkte und Kategorien erstellt, eingesehen, geändert, gelöscht
+            und aufgelistet werden.
+            Nun erhaltete ich im Rahmen üK294 den Auftrag, ein Web-Frontend zur bestehenden API zu
+            entwickeln. Dieses soll eine komfortable Benutzerschnittstelle bieten, um die obengenannten
+            Aktionen mit den Produkten und Kategorien ausführen zu können.
+            Da die API mittels JWT geschützt wurde, muss das Frontend dem Benutzer eine Möglichkeit
+            bieten, sich bei der API zu authentifizieren und ein Token zu erwerben. Ohne Authentifizierung
+            kann der Benutzer nicht auf die Daten zugreifen.
+            Die Applikation muss das MVC-Entwurfsmuster umsetzen.
+        </p>
+        <p class="home">Um Sie sich authentifizieren zu lassen, klicken Sie auf <b>Login</b> in die Navigation.</p>
+    </div>
 </body>
 </html>
