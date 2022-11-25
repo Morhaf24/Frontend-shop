@@ -8,73 +8,79 @@
     </nav>
     <div class="products">
     <h1 class="products">Create new Product</h1>
+
+            <!--inputfiled in a table created-->
     <table>
-        <tr>
-            <td>
+        <tr class="create">
+            <td class="create">
             <label for="create" class="create" id="create">Sku: </label> 
             </td>
-            <td>
+            <td class="create">
             <input type="Text" class="create" id="sku">
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="create">
+            <td class="create">
             <label for="create" class="create" id="create">Active: </label>
             </td>
-            <td>
+            <td class="create">
             <input type="Text" class="create" id="active">
             </td>
         </tr>
-        <tr>
-            <td>
-            <label for="create" class="create" id="create">Category_id: </label>
+        <tr class="create">
+            <td class="create">
+            <label for="create" class="create" id="id_Category">Category_id: </label>
             </td>
-            <td>
-            <input type="Text" class="create" id="category_id">
+            <td class="create">
+            <select type="Text" class="create" id="category_id">
+            <option value="NULL">(Null)</option>
+            </select>
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="create">
+            <td class="create">
             <label for="create" class="create" id="create">Name: </label>
             </td>
-            <td>
+            <td class="create">
             <input type="Text" class="create" id="name">
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="create">
+            <td class="create">
             <label for="create" class="create" id="create">Description: </label>
             </td>
-            <td>
+            <td class="create">
             <input type="Text" class="create" id="description">
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="create">
+            <td class="create">
             <label for="create" class="create" id="create">Image: </label>
             </td>
-            <td>
+            <td class="create">
             <input type="Text" class="create" id="image">
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="create">
+            <td class="create">
             <label for="create" class="create" id="create">Price: </label>
             </td>
-            <td>
+            <td class="create">
             <input type="Text" class="create" id="price">
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr class="create">
+            <td class="create">
             <label for="create" class="create" id="create">Stock: </label>
             </td>
-            <td>
+            <td class="create">
             <input type="Text" class="create" id="stock">
             </td>
         </tr>
     </table>
 
-
+        <!--Button to create category-->
     <button id="create-button">Create</button>
+
+        <!--connect php with javascript-->
     <script src="../controller/create_product.js"></script>

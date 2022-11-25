@@ -1,7 +1,15 @@
+/*
+*definte new variables
+*/
+
 var inputName = document.getElementById("name");
 var inputActive = document.getElementById("active");
 var createButton = document.getElementById("create-button");
 var createCategoryRequest;
+
+/**
+ * POST request definted, to authenticate
+ */
 
 function onCreateCategoryButtonPressed(event) {
     event.preventDefault();
@@ -10,6 +18,10 @@ function onCreateCategoryButtonPressed(event) {
         name: inputName.value,
         active: inputActive.value 
   };
+
+/**
+ * response of the POST request
+ */
 
   createCategoryRequest = new XMLHttpRequest();
   createCategoryRequest.open("POST", "../API/V1/Category");
@@ -22,9 +34,21 @@ function onNewCategoryCreated(event) {
         return;
     }
 
-    console.log(createCategoryRequest.status);
+    var responseStatus = createCategoryRequest.status;
+
+    if (responseStatus == 400) {
+      alert("Error!");
+    }
+    else {
+      alert("Category created.");
+  }
 
 }
+
+  /**
+   * button definted (if button is clicked, request will be requested)
+   */
+
 createButton.addEventListener("click", onCreateCategoryButtonPressed);
 
 

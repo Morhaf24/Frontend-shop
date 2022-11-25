@@ -8,26 +8,29 @@
     </nav>
     <div class="categorys">
     <h1 class="categorys">Create new Category</h1>
-
+        <!--inputfiled in a table created-->
     <table>
-        <tr>
-                <td>
+        <tr class="create">
+                <td class="create">
                         <label for="name" class="create" id="create">Name: </label>
                 </td>
-                <td>
+                <td class="create">
                         <input type="Text" class="create" id="name">
                 </td>
         </tr>
-        <tr>
-                <td>
+        <tr class="create">
+                <td class="create">
                         <label class="create" id="create">Active:</label>
                 </td>
-                <td>
+                <td class="create">
                         <input type="Text" class="create" id="active">
                 </td>
-        </tr>
+        </tr class="create">
     </table>
-
     <p></p>
+
+        <!--Button to create category-->
     <button id="create-button">Create</button>
+
+        <!--connect php with javascript-->
     <script src="../controller/create_category.js"></script>

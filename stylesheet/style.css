@@ -144,17 +144,34 @@ p.home {
 }
 
 table.tables {
-    border: 5px solid rgb(0, 0, 0);
+    border: 10px solid rgb(255, 255, 255);
+    font-size: 25px;
 }
 
 th.head {
     color: white;
-    background-color: rgb(50, 10, 10);  
-}
-
-td {
-    color: white;
-    background-color: gray;  
-    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(50, 10, 10); 
  
 }
+
+tr {
+    color: rgb(255, 255, 255);
+    background-color: gray;  
+    border: 10px solid rgb(50, 10, 10);
+}
+
+td.create {
+    background-color: white;  
+
+}
+
+td.tables {
+        color: rgb(0, 0, 0);
+        background-color: gray;  
+        border: 10px solid rgb(50, 10, 10);
+        
+    }
+td {
+    border-collapse: collapse;
+}
+
